@@ -21,14 +21,20 @@ Ausgewählt was ich machen will für diese Lernperiode. Ich habe den ersten Vors
 
 ## 29.8
 
-- [ ] Alle Charaktere ins VS schreiben
-- [ ] Aufschreiben wer welche Kräfte hat und wie viel Schaden und Leben der hat
-- [ ] Das Spiel Sinnvoll versuchen aufzuschreiben. - Dann Ueberlegen wie anfangen Coden.
+- [x] Alle Charaktere ins VS schreiben
+- [x] Aufschreiben wer welche Kräfte hat und wie viel Schaden und Leben der hat
+- [x] Das Spiel Sinnvoll versuchen aufzuschreiben. - Dann Ueberlegen wie anfangen Coden.
 
 📵 Eines dieser Arbeitspakete ist offline.
 
 ✍️ Heute habe ich... (50-100 Wörter)
-
+Heute habe ich die Charaktere in Visual Studio eingetragen und die Liste etwas vereinfacht, indem ich einige Figuren weggelassen habe. So ist das Projekt übersichtlicher und leichter zu starten. Zusätzlich habe ich eine Character-Klasse erstellt, die die Eigenschaften Name, Leben, Angriff und Element enthält. Dazu habe ich Methoden programmiert, mit denen die Charaktere sich gegenseitig angreifen und Schaden nehmen können. Damit ist jetzt ein erster Schritt zu einem funktionierenden Kampfsystem gelegt, das die Basis für den weiteren Spielablauf bildet.
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
+- [ ] Charakterauswahl einbauen → Spieler soll zu Beginn auswählen, mit welchem Helden er spielen möchte.
+- [ ] Wenn ein Charakter 0 Leben hat, soll das Spiel den Gewinner anzeigen.
+- [ ] Nach dem ersten Sieg soll automatisch der nächste Gegner aus der Liste kommen.
+- [ ] en kompletten Spielablauf mit Charakteren, Gegnern, Reihenfolge der Kämpfe und Sonderfähigkeiten.
+
 
 
