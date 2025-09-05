@@ -30,11 +30,19 @@ Ausgewählt was ich machen will für diese Lernperiode. Ich habe den ersten Vors
 ✍️ Heute habe ich... (50-100 Wörter)
 Heute habe ich die Charaktere in Visual Studio eingetragen und die Liste etwas vereinfacht, indem ich einige Figuren weggelassen habe. So ist das Projekt übersichtlicher und leichter zu starten. Zusätzlich habe ich eine Character-Klasse erstellt, die die Eigenschaften Name, Leben, Angriff und Element enthält. Dazu habe ich Methoden programmiert, mit denen die Charaktere sich gegenseitig angreifen und Schaden nehmen können. Damit ist jetzt ein erster Schritt zu einem funktionierenden Kampfsystem gelegt, das die Basis für den weiteren Spielablauf bildet.
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
-
-- [ ] Charakterauswahl einbauen → Spieler soll zu Beginn auswählen, mit welchem Helden er spielen möchte.
+## 5.9
+- [x] Charakterauswahl einbauen → Spieler soll zu Beginn auswählen, mit welchem Helden er spielen möchte.
 - [ ] Wenn ein Charakter 0 Leben hat, soll das Spiel den Gewinner anzeigen.
 - [ ] Nach dem ersten Sieg soll automatisch der nächste Gegner aus der Liste kommen.
-- [ ] en kompletten Spielablauf mit Charakteren, Gegnern, Reihenfolge der Kämpfe und Sonderfähigkeiten.
+- [x] en kompletten Spielablauf mit Charakteren, Gegnern, Reihenfolge der Kämpfe und Sonderfähigkeiten.
 
+✍️ Heute habe ich... (50-100 Wörter)
+Den einen genauen Spielablaufpaln gemacht wo ich sehe wei die Schleife soll sein, wie die Kämpfe sind und was ich vielleicht noch als nächstes(Sonderfunktionen) hinzufügen möchte. Ausserdem kann ich jetzt im Code entscheiden mit Welchen Helden ich als erstes will Kämpfen. Das funktioniert aber noch nicht ganz blendend denn mann mus die Zahl immer zwei mal eingeben. Dann habe ich eine Klasse fight gemacht und da so ein groben code geschrieben. Er funktioniert noch nicht aber man sieht so mal die basics und die Idee.
 
+## 12.9
+
+- [ ] Charakterauswahl verbessern → So das man die zahl nicht mehr 2mal eingeben muss
+- [ ] fight class richtig programmieren.
+- [ ] Diese Funktion richtig einbauen: Nach dem ersten Sieg soll automatisch der nächste Gegner aus der Liste kommen.
+- [ ] Offline: Die Sonderfunktionen aufschreiben und versuchen zu realisieren.
 
