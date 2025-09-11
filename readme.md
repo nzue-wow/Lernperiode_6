@@ -41,8 +41,16 @@ Den einen genauen Spielablaufpaln gemacht wo ich sehe wei die Schleife soll sein
 
 ## 12.9
 
-- [ ] Charakterauswahl verbessern → So das man die zahl nicht mehr 2mal eingeben muss
-- [ ] fight class richtig programmieren.
+- [x] Charakterauswahl verbessern → So das man die zahl nicht mehr 2mal eingeben muss
+- [x] fight class richtig programmieren.
 - [ ] Diese Funktion richtig einbauen: Nach dem ersten Sieg soll automatisch der nächste Gegner aus der Liste kommen.
-- [ ] Offline: Die Sonderfunktionen aufschreiben und versuchen zu realisieren.
+- [x] Leben muss abgezogen werden beim Kampf.
 
+✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich die Charakterauswahl verbessert. Jetzt muss man nicht mehr die Zahl zeimal eingeben. Dann habe ich noch die Fight class richtig programmiert, also aus meinem groben code jetzt ein richtigen gemacht. Beim Kampf werden jetzt die Leben der beiden Kämpfen bei jedem Zug angepasst.
+
+# 19.9
+- [ ] Bis jetzt gewinnt der Böse immer und es gibt nur zwei Attacks bis jemand gewinnt -> Die logik des Spiels verbesser, leben anpassen, Angriff anpassen.
+- [ ] Es soll ein random gegner als erstes kommen nicht immer der gleiche
+- [ ] Nachschauen wie dann der nächste Gegner ins Spiel kommt
+- [ ] Diese Funktion richtig einbauen: Nach dem ersten Sieg soll automatisch der nächste Gegner aus der Liste kommen.
