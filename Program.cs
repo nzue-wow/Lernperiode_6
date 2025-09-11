@@ -35,23 +35,28 @@
             
             
             int choice = -1;
-            while(choice < 1 || choice > AvatarTeam.Count)
+            while(true)
             {
 
                 Console.WriteLine("Gib die Zahl ein (1-" + AvatarTeam.Count + "): ");
                 string input = Console.ReadLine();
 
-                if (int.TryParse(input, out choice) || choice < 1 || choice > AvatarTeam.Count)
+                if (int.TryParse(input, out choice))
                 {
-                    
-                    Console.WriteLine("Ungültige Eingabe. Bitte wähle eine Zahl zwischen 1 und " + AvatarTeam.Count);
-                    input = Console.ReadLine();
-                    
+                    if (choice >= 1 && choice <= AvatarTeam.Count)
+                    {
+                        break; // Gültige Eingabe, Schleife verlassen
+                    }
+                    else
+                    {
+
+                        Console.WriteLine("Ungültige Eingabe. Bitte wähle eine Zahl zwischen 1 und " + AvatarTeam.Count);
+                    }
                 }
                 else
                 {
                     Console.WriteLine("Ungültige Eingabe. Bitte gib eine Zahl ein.");
-                    input = Console.ReadLine();
+                    
                 }
             }
 
@@ -60,7 +65,9 @@
 
             Character chosenEnemy = TheBadPeople[0];
             Console.WriteLine($"Dein Gegner ist: {chosenEnemy.Name} ({chosenEnemy.Element})");
-            Console.WriteLine($"Leben: {chosenEnemy.Leben}, Angriff: {chosenEnemy.Angriff}");
+
+            Fight fight = new Fight(chosenhero, chosenEnemy);
+            fight.StartFight();
 
         }
 

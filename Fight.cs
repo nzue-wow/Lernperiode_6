@@ -6,42 +6,51 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
+using System;
+
 namespace RPGLastAirbendergame
 {
     internal class Fight
     {
-        public Fight() {
+        private Character hero;
+        private Character enemy;
 
-           Console.WriteLine($"{chosenhero} vs. {chosenenemy}");
-
-            // chosen hero greift an
-            int neueslebenenemy = leben.cosenenemy - chosenhero.angriff;
-
-            // chosen enemy greift an
-            int neueslebenhero = leben.chosenhero - chosenenemy.angriff;
-
-            // aktualisiere leben
-            lebenenemy = neueslebenenemy;
-            lebenhero = neueslebenhero;
-
-            if (lebenenemy <= 0)
-            {
-                Character chosenEnemy = TheBadPeople, i++; // nächster gegner in der liste
-            }
-            else
-            {
-                Fight(); // wiederhole den kampf
-            };
-
-            if (lebenhero <= 0)
-            {
-               Console.WriteLine("Game Over! Du wurdest besiegt."); // spiel beenden
-            }
-            else
-            {
-                Fight();// wiederhole den kampf
-            };
+        public Fight(Character hero, Character enemy)
+        {
+            this.hero = hero;
+            this.enemy = enemy;
         }
 
+        public void StartFight()
+        {
+            Console.WriteLine($"\n--- Der Kampf beginnt: {hero.Name} vs. {enemy.Name} ---\n");
+
+            while (hero.Leben > 0 && enemy.Leben > 0)
+            {
+                // Held greift an
+                enemy.TakeDamage(hero.Angriff);
+                Console.WriteLine($"{hero.Name} greift an! {enemy.Name} hat nun {enemy.Leben} Leben.");
+
+                if (enemy.Leben <= 0)
+                {
+                    Console.WriteLine($"{enemy.Name} wurde besiegt!");
+                    break;
+                }
+
+                // Gegner greift an
+                hero.TakeDamage(enemy.Angriff);
+                Console.WriteLine($"{enemy.Name} greift zurück! {hero.Name} hat nun {hero.Leben} Leben.");
+
+                if (hero.Leben <= 0)
+                {
+                    Console.WriteLine($"{hero.Name} wurde besiegt! Game Over.");
+                    break;
+                }
+
+                Console.WriteLine("Drücke eine Taste für die nächste Runde...");
+                Console.ReadKey();
+            }
+        }
     }
 }
+
