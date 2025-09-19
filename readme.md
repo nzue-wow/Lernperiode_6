@@ -50,7 +50,16 @@ Den einen genauen Spielablaufpaln gemacht wo ich sehe wei die Schleife soll sein
 Heute habe ich die Charakterauswahl verbessert. Jetzt muss man nicht mehr die Zahl zeimal eingeben. Dann habe ich noch die Fight class richtig programmiert, also aus meinem groben code jetzt ein richtigen gemacht. Beim Kampf werden jetzt die Leben der beiden Kämpfen bei jedem Zug angepasst.
 
 # 19.9
-- [ ] Bis jetzt gewinnt der Böse immer und es gibt nur zwei Attacks bis jemand gewinnt -> Die logik des Spiels verbesser, leben anpassen, Angriff anpassen.
-- [ ] Es soll ein random gegner als erstes kommen nicht immer der gleiche
-- [ ] Nachschauen wie dann der nächste Gegner ins Spiel kommt
+- [x] Bis jetzt gewinnt der Böse immer und es gibt nur zwei Attacks bis jemand gewinnt -> Die logik des Spiels verbesser, leben anpassen, Angriff anpassen.
+- [x] Es soll ein random gegner als erstes kommen nicht immer der gleiche
+- [x] Nachschauen wie dann der nächste Gegner ins Spiel kommt
 - [ ] Diese Funktion richtig einbauen: Nach dem ersten Sieg soll automatisch der nächste Gegner aus der Liste kommen.
+
+Heute habe ich...
+Es so gemacht das nicht immer der Böse gewinnt. Also ich habe allgemein das Leben bei jedem erhöht und auch bei jedem einen Schutz eingebaut das das Spiel nicht so schnell zue ende ist. Dann habe ich die Gegner randomized so das es nicht immer der gleiche Gegner ist. Jetzt kann auch mal einer der Helden gewinnen. Ebenfalls habe ich nachgeschaut wie die nächsten Gegner ins spiel kommen. Ich muss eine Schleife  über den Gegnern machen und nach jedem Kampf soll kontrolliert werden ob der Held noch lebt.(Man soll auch das ein neuer Held ins Spiel kommt)
+
+# 17.10
+
+- [ ] Diese Funktion richtig einbauen: Nach dem ersten Sieg soll automatisch der nächste Gegner aus der Liste kommen.
+- [ ] Diese Funktion richtig einbauen: Nach dem Verlust soll automatisch der nächste Held aus der Liste kommen.
+- [ ] Kämpfe in einer Schleife abarbeiten, nicht nur einen einzelnen Kampf.
