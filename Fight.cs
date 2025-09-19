@@ -48,6 +48,7 @@ namespace RPGLastAirbendergame
                 }
 
                 Console.WriteLine("Drücke eine Taste für die nächste Runde...");
+                Console.WriteLine(" ");
                 Console.ReadKey();
             }
         }

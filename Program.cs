@@ -7,17 +7,17 @@
 
             List<Character> AvatarTeam = new List<Character>()
             {
-            new Character("Aang", 20, 7, "Air"),
-            new Character("Katara", 15, 5, "Water"),
-            new Character("Sokka", 12, 4, "Boomerang"),
-            new Character("Toph", 18, 6, "Earth")
+            new Character("Aang", 80, 15, "Air", 5),
+            new Character("Katara", 70, 12, "Water", 6),
+            new Character("Sokka", 65, 10, "Boomerang", 4),
+            new Character("Toph", 90, 14, "Earth", 8)
             };
 
             List<Character> TheBadPeople = new List<Character>()
             {
-            new Character("Fire Lord Ozai", 25, 8, "Fire"),
-            new Character("Princess Azula", 20, 7, "Fire"),
-            new Character("Admiral Zhao", 15, 5, "Fire")
+            new Character("Fire Lord Ozai", 100, 18, "Fire", 7),
+            new Character("Princess Azula", 85, 16, "Fire", 6),
+            new Character("Admiral Zhao", 75, 13, "Fire", 5)
             };
 
 
@@ -63,8 +63,11 @@
             Character chosenhero = AvatarTeam[choice - 1];
             Console.WriteLine($"Du hast {chosenhero.Name} gewählt!");
 
-            Character chosenEnemy = TheBadPeople[0];
+            Random rnd = new Random();
+            Character chosenEnemy = TheBadPeople[rnd.Next(TheBadPeople.Count)];
+
             Console.WriteLine($"Dein Gegner ist: {chosenEnemy.Name} ({chosenEnemy.Element})");
+
 
             Fight fight = new Fight(chosenhero, chosenEnemy);
             fight.StartFight();
