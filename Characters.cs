@@ -1,7 +1,7 @@
 ﻿public class Character
 {
     public string Name { get; private set; }
-    public int Leben { get; private set; }
+    public int Leben { get; set; }
     public int Angriff { get; private set; }
     public string Element { get; private set; }
     public int Schutz { get; private set; }
@@ -17,17 +17,13 @@
 
     public void TakeDamage(int damage)
     {
-        int reduced = Math.Max(1, damage - Schutz); // mindestens 1 Schaden
+        int reduced = Math.Max(1, damage - Schutz);
         Leben -= reduced;
     }
-
 
     public int Attack()
     {
         Random rnd = new Random();
-        
-        return rnd.Next(Leben - 2, Leben + 3);
+        return rnd.Next(Angriff - 2, Angriff + 3);
     }
-
-
 }
